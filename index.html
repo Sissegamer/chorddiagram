@@ -3,11 +3,16 @@
     <script src="/brython.js"></script>
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+    - numpy
+    - holoviews
+    - pandas
+    </py-env>
 </head>
 <body onload="brython()">
   <py-script>
 
-  import holoviews as hv
+import holoviews as hv
 from holoviews import opts, dim
 from bokeh.io import show
 import pandas as pd
